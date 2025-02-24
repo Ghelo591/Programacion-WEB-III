@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Santo Grial</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        footer {
+            background: #333;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        /*layout santo grial*/
+
+        .container {
+            display: flex;
+            flex: 1;
+            max-width: 1800px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .sidebar-left, .sidebar-right {
+            width: 20%;
+            background: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-content {
+            flex: 1;
+            background: rgb(218, 236, 217);
+            padding: 20px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }        
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar-left, .sidebar-right {
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Encabezado</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar-left">
+            <h2>Menú</h2>
+            <p>Opciones de navegación</p>
+        </aside>
+
+        <main class="main-content">
+            <h2>Contenido Principal</h2>
+            <p>Aquí va el contenido principal del sitio web.</p>
+        </main>
+
+        <aside class="sidebar-right">
+            <h2>Publicidad</h2>
+            <p>Espacio para anuncios o widgets</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
